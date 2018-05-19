@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="img/logo.png" />
   <!-- Font Awesome -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -83,15 +83,23 @@
   <div class="view full-page-intro">
 
     <!--Video source-->
-    <video id="myVideo" class="" autoplay loop>
+    <!-- <video id="myVideo" class="" autoplay loop>
       <source src="video/Background.mp4" type="video/mp4" />
-    </video>
+    </video> -->
+
+    <img id="background_image" src="img/Background.jpg"></img>
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-blue-light d-flex justify-content-center align-items-center">
 
       <!-- Content -->
       <div class="container">
+
+        <div class="row fadeIn">
+          <div class="col-md-12 flex-center">
+            <img id="mascot" class="img-fluid" src="img/Stand.png" onmouseover="this.src='img/Hello.png';" onmouseout="this.src='img/Stand.png';" alt="Responsive image"></img>
+          </div>
+        </div>
 
         <!--Grid row-->
         <div class="row wow fadeIn">
@@ -104,13 +112,13 @@
             <hr class="hr-light">
 
             <p>
-              <h2>Tingkatkan kemampuan sosial media anda dengan BotWaro</h2>
+              <h2>Selalu Merespon, Selalu Waro, Selalu Menjawab</h2>
             </p>
 
-            <p class="mb-4 d-none d-md-block">
+            <!-- <p class="mb-4 d-none d-md-block">
               <strong>Terinspirasi dari masalah "Ngomong di grup ga ditanggepin". BotWaro hadir untuk membantumu dalam menemukan jawaban.
               BotWaro juga akan membantumu untuk selalu digubris di grup</strong>
-            </p>
+            </p> -->
 
             <a href="#about" class="btn btn-outline-white">Lihat Selengkapnya!
             </a>
