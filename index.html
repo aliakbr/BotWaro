@@ -2,537 +2,279 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>BotWaro</title>
-  <link rel="shortcut icon" href="img/logo.png" />
-  <!-- Font Awesome -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>BotWaro</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" type="text/css" rel="stylesheet">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand" href="http://localhost/MVP-Landing-Page/landing-page.html">
-        <strong>BotWaro</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Beranda
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Tentang</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#download">Mulai Gunakan</a>
-          </li>
-        </ul>
-
-        <!-- Right -->
-        <!-- <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-              <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-                target="_blank">
-                <i class="fa fa-user mr-2"></i>Sing Up
-              </a>
-            </li>
-        </ul> -->
-
-      </div>
-
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
     </div>
-  </nav>
-  <!-- Navbar -->
 
-  <!-- Full Page Intro -->
-  <div class="view full-page-intro">
-
-    <!--Video source-->
-    <!-- <video id="myVideo" class="" autoplay loop>
-      <source src="video/Background.mp4" type="video/mp4" />
-    </video> -->
-
-    <img id="background_image" src="img/Background.jpg"></img>
-
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-blue-light d-flex justify-content-center align-items-center">
-
-      <!-- Content -->
-      <div class="container">
-
-        <div class="row fadeIn">
-          <div class="col-md-12 flex-center">
-            <img id="mascot" class="img-fluid" src="img/Stand.png" onmouseover="this.src='img/Hello.png';" onmouseout="this.src='img/Stand.png';" alt="Responsive image"></img>
-          </div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="#">
+                              Botwaro
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <!-- Menu Area -->
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+                                <ul class="navbar-nav ml-auto" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="#home">Beranda</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+                                </ul>
+                                <div class="sing-up-button d-lg-none">
+                                    <a href="#download">Tambahkan Sekarang</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="#download">Tambahkan Sekarang</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-md-12 mb-4 white-text text-center text-md-middle">
-
-            <h1 class="display-4 font-weight-bold">Halo dari BotWaro!</h1>
-
-            <hr class="hr-light">
-
-            <p>
-              <h2>Selalu Merespon, Selalu Waro, Selalu Menjawab</h2>
-            </p>
-
-            <!-- <p class="mb-4 d-none d-md-block">
-              <strong>Terinspirasi dari masalah "Ngomong di grup ga ditanggepin". BotWaro hadir untuk membantumu dalam menemukan jawaban.
-              BotWaro juga akan membantumu untuk selalu digubris di grup</strong>
-            </p> -->
-
-            <a href="#about" class="btn btn-outline-white">Lihat Selengkapnya!
-            </a>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <!-- <div class="col-md-6 col-xl-5 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
-
-          </div> -->
-          <!--Grid column-->
-
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Halo! Ini BotWaro</h2>
+                        <h3>H</h3>
+                        <p>Teman Virtual yang selalu menjawab pertanyaanmu</p>
+                    </div>
+                    <div class="get-start-area">
+                        <!-- Form Start -->
+                          <a href="#about" id="tambah-sekarang" class="btn submit-btn">Pelajari Lebih Lanjut</a>
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--Grid row-->
-
-      </div>
-      <!-- Content -->
-
-    </div>
-    <!-- Mask & flexbox options-->
-
-  </div>
-  <!-- Full Page Intro -->
-
-  <!--Main layout-->
-  <main>
-    <div class="container">
-
-      <!--Section: Main info-->
-      <!-- <section class="mt-5 wow fadeIn"> -->
-
-        <!-- <div class="row"> -->
-
-          <!--Grid column-->
-          <!-- <div class="col-md-6 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
-
-          </div> -->
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <!-- <div class="col-md-6 mb-4"> -->
-
-            <!-- Main heading -->
-            <!-- <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p> -->
-            <!-- Main heading -->
-
-            <!-- <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p> -->
-
-            <!-- CTA -->
-            <!-- <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-indigo btn-md">Download
-              <i class="fa fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-indigo btn-md">Live demo
-              <i class="fa fa-image ml-1"></i>
-            </a>
-
-          </div> -->
-          <!--Grid column-->
-
-        <!-- </div> -->
-        <!--Grid row-->
-
-      <!-- </section> -->
-      <!--Section: Main info-->
-
-      <!-- <hr class="my-5"> -->
-
-      <!--Section: Main features & Quick Start-->
-      <section id="about" class="mt-5 wow fadeIn">
-
-        <h3 class="h3 text-center mb-5">Tentang BotWaro</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Penjawab di saat genting</h5>
-                <p class="grey-text">
-                Merasa kesulitan untuk menemukan jawaban di Google? Takut tidak dijawab
-                saat bertanya di grup? Tambahkan BotWaro ke grup sosial media anda. BotWaro akan menjawab
-                dengan model rekomendasi terbaik dari Big Data kami</p>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-people-carry fa-2x mb-1 blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Membudayakan Budaya Gubris dan Saling Bantu di Grup</h5>
-                <p class="grey-text">
-                  Gunakan BotWaro untuk memaksa teman anda menjawab agar poinnya tidak dikurangi dan dikucilkan di dalam grup.
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Jadilah Jawara di Grup dan Dunia</h5>
-                <p class="grey-text">
-                  BotWaro ingin membudayakan budaya tanya-jawab pada grup. Kumpulkan poin sebanyak-banyaknya
-                  dan jadilah juara di grup anda. Grup-grup terbaik akan bertarung pada LCC mingguan yang dibuat
-                  oleh BotWaro
-                </p>
-              </div>
-            </div>
-            <!--/Third row-->
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12" center>
-
-            <p class="h5 text-center mb-4">Lihat video di bawah untuk lebih tahu tentang BotWaro!</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="" controls>
-                <source src="video/BotWaro.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-          <!--/Grid column-->
-
+        <!-- Welcome thumb -->
+        <div id="cf" class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+            <img class="bottom" src="img/bg-img/Logo_1.png" onmouseover="this.src='img/bg-img/Logo_2.png';" onmouseout="this.src='img/bg-img/Logo_1.png';" alt="" >
         </div>
-        <!--/Grid row-->
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
 
-      </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Fitur - Fitur</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
-          <div class="col-md-4">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Paksa teman</h6>
-                <p class="grey-text">
-                    Beri notifikasi pada teman dengan fitur paksa teman dan hukum mereka dengan pengurangan poin
-                    jika tidak menjawab
-                </p>
-                <div style="height:15px"></div>
-              </div>
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
+        <!-- Special Description Area -->
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/feature-img/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Kesulitan Cari Jawaban di Internet? Tanya BotWaro Aja!</h2>
+                            <p>Kamu suka kesulitan dalam mencari informasi? Suka bingung sama kata kunci? Atau terhambat bahasa? Tenang Botwaro bisa jawab bahkan dikasih gambar soal Fisika!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Featured Questions</h6>
-                <p class="grey-text">
-                  Dapatkan daftar pertanyaan yang belum terjawab dari berbagai grup sesuai dengan expertise anda
-                  secara personal
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Tanya Personal</h6>
-                <p class="grey-text">Malu untuk bertanya di grup? Tanyakan BotWaro secara personal untuk membantu anda</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Jawab Otomatis</h6>
-                <p class="grey-text">
-                  BotWaro akan otomatis menjawab pertanyaan di grup apabila belum ada
-                  pengguna lain yang menjawab dalam 5 menit. Tenang saja, batas waktunya bisa diatur kok.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
-          </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Tanyakan Dunia</h6>
-                <p class="grey-text">
-                  Orang-orang di grup dan BotWaro belum menjawab pertanyaan anda? Buat pertanyaan
-                  available ke semua pengguna BotWaro untuk menemukan jawaban dari orang yang lebih
-                  tahu
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Papan Skor</h6>
-                <p class="grey-text">Dapatkan poin untuk setiap kali anda menjawab untuk menjadi juara grup hingga dunia</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Command Interaktif</h6>
-                <p class="grey-text">
-                  Bosan berinteraksi hanya melalui chat? BotWaro dilengkapi dengan fitur interaktif yang tersedia pada sosial media yang digunakan.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">
-                    Dapatkan Rekomendasi Artikel
-                </h6>
-                <p class="grey-text">
-                  Dapatkan rekomendasi artikel yang mungkin anda sukai dari pertanyaan-pertanyaan
-                  yang anda ajukan.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
         </div>
-        <!--/First row-->
-
-      </section>
-      <!--Section: Not enough-->
-
-      <hr class="mb-5">
-
-      <!--Section: More-->
-      </section>
-      <!--Section: More-->
-      <section id="download">
-        <h2 class="my-5 h3 text-center"> Mulai Gunakan </h2>
-        <div class="row d-flex justify-content-center">
-          <div class="md-4 text-center justify-content-center">
-            <a href="#" class="btn btn-block btn-outline-primary waves-effect">
-              <i class="fab fa-line fa-2x green-text"></i>
-              <span class="ml-2">Tambahkan pada LINE</span>
-            </a>
-          </div>
-          <div class="md-4 ml-4 text-center justify-content-center">
-            <a href="#" class="btn btn-block btn-outline-primary waves-effect">
-              <i class="fab fa-facebook fa-2x blue-text"></i>
-              <span class="ml-2">Tambahkan pada Facebook</span>
-            </a>
-          </div>
-          <div class="md-4 ml-4 text-center justify-content-center">
-            <a href="#" class="btn btn-block btn-outline-primary waves-effect">
-              <i class="fab fa-telegram fa-2x blue-text"></i>
-              <span class="ml-2">Tambahkan pada Telegram</span>
-            </a>
-          </div>
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Butuh informasi cepat di grup? Tanya BotWaro aja!</h2>
+                            <p>Suka galau dan bingung cari informasi? Tanya botwaro aja! Ga perlu mikirin kata-kata yang tepat untuk nanya, BotWaro akan memberikan rekomendasi jawaban. Jawabannya juga sesuai konteksmu kok</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="special_description_img wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/feature-img/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-  </main>
-  <!--Main layout-->
+        <!-- Special Description Area -->
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/feature-img/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Suka ga dijawab di grup? Tenang, BotWaro yang akan <i>Waro</i></h2>
+                            <p>Botwaro akan otomatis memberikan jawaban dan bantuan apabila tidak ada yang menjawab di grup. Ga akan spam, kamu bisa atur waktu penjawab otomatisnya.<hr> <i>*Catatan Waro = Merespon/Menjawab</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Mulai Budayakan Menjawab di Grup dengan <i>WaroPoint</i></h2>
+                            <p>WaroPoint akan bertambah setiap kamu menjawab dan berkurang jika tidak menjawab. Jangan dapet poin negatif atau akan BotWaro ejek loh</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="special_description_img wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/feature-img/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
 
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-    <!--/.Call to action-->
+    <section class="special-area bg-white section_padding_100" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <h2>Fitur Lain Yang Ditawarkan</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
 
-    <hr class="my-4">
+            <div class="row">
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="single-icon">
+                            <i class="ti-user" aria-hidden="true"></i>
+                        </div>
+                        <h4>Konten Terpersonalisasi</h4>
+                        <p>Konten dan jawaban akan disesuaikan dengan profil dan ketertarikan kamu</p>
+                    </div>
+                </div>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-icon">
+                            <i class="ti-bookmark" aria-hidden="true"></i>
+                        </div>
+                        <h4>Rekomendasi Artikel</h4>
+                        <p>BotWaro akan memberikan informasi-informasi terkini sesuai dengan interest dan riwayat pertanyaanmu</p>
+                    </div>
+                </div>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="single-icon">
+                            <i class="ti-location-pin" aria-hidden="true"></i>
+                        </div>
+                        <h4>Konten Terlokalisasi</h4>
+                        <p>BotWaro dapat memberikan informasi disesuaikan dengan lokasi kamu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook mr-3"></i>
-      </a>
+    <!-- ***** CTA Area Start ***** -->
+    <section class="our-monthly-membership section_padding_50 clearfix" id="download">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="membership-description">
+                        <h2>Mulai Gunakan</h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                      <div class="get-started-button wow bounceInDown" data-wow-delay="0.3s">
+                          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                      <div class="get-started-button wow bounceInDown" data-wow-delay="0.3s">
+                          <a href="#"> <i class="fab fa-line"></i> LINE</a>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                      <div class="get-started-button wow bounceInDown" data-wow-delay="0.3s">
+                          <a href="#"> <i class="fab fa-telegram-plane"></i> Telegram</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <img id="banner" src="img/core-img/banner.png" width="50%" height="50%"></img>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
+            <p>Copyright ©2018 Botwaro Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> botwaro.com </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script type="text/javascript" src="js/landing-page.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+    <!-- Other js -->
+    <script src="style.js"></script>
 </body>
+
 </html>
