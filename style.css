@@ -406,7 +406,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #884bdf;
+    background-color: #5b32b4;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -745,7 +745,7 @@ p {
 }
 
 .video-area .video-play-btn a:hover {
-    background-color: #a865e1;
+    background-color: ##5a20d8;
     color: #fff;
 }
 
@@ -756,12 +756,12 @@ p {
 .cool_facts_area {
     position: relative;
     z-index: auto;
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
+    background: #5b32b4;
+    background: -webkit-linear-gradient(to left, #5b32b4, #5a20d8);
+    background: -webkit-linear-gradient(right, #5b32b4, #5a20d8);
+    background: -webkit-gradient(linear, right top, left top, from(#5b32b4), to(#5a20d8));
+    background: -o-linear-gradient(right, #5b32b4, ##5a20d8);
+    background: linear-gradient(to left, #5b32b4, ##5a20d8);
     padding: 180px 0 80px 0;
     top: -100px;
 }
@@ -914,7 +914,7 @@ p {
 .single-price-plan.active .package-plan,
 .single-price-plan.active .plan-button > a,
 .single-price-plan:hover .plan-button > a {
-    background-color: #a865e1;
+    background-color: ##5a20d8;
 }
 
 .single-price-plan.active .package-plan .ca-price > h4,
@@ -1042,12 +1042,12 @@ p {
 -------------------------- */
 
 .our-monthly-membership {
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
+    background: #5a20d8;
+    background: -webkit-linear-gradient(to left, #5b32b4, #5a20d8);
+    background: -webkit-linear-gradient(right, #5b32b4, #5a20d8);
+    background: -webkit-gradient(linear, right top, left top, from(#5b32b4), to(##5a20d8));
+    background: -o-linear-gradient(right, #5b32b4, #5a20d8);
+    background: linear-gradient(to left, #5b32b4, #5a20d8);
 }
 
 .membership-description > h2 {
