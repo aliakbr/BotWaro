@@ -1080,6 +1080,26 @@ p {
     transition-duration: 500ms;
 }
 
+.get-started-button > button {
+    background: #ffffff;
+    height: 45px;
+    min-width: 155px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    color: #fb397d;
+    font-weight: 500;
+    border-radius: 23px 23px 23px 0;
+}
+
+.get-started-button > button:hover {
+    background: #5b32b4;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
 .get-started-button {
     text-align: right;
 }
